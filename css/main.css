@@ -1,0 +1,42 @@
+/**
+ * @file main style sheet
+ * @author cxl(c.xinle@gmail.com)
+ */
+
+.box {
+    width: 500px;
+    margin:0 auto;
+    margin-top:50px;
+    border:1px solid #CCC;
+    border-radius:5px;
+    position:relative;
+    padding:10px
+}
+
+.pt {
+    position: absolute;
+    top:-20px;
+    right:-50px;
+    -webkit-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    transform:rotate(10deg);
+}
+
+.error {
+    color:#F00
+}
+
+.messages {
+    border: 1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.message {
+    margin: 5px;
+    border-bottom: 1px solid #CCC;
+}
+.message:last-child {
+    border-bottom:none
+}

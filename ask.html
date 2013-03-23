@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Ask</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="box">
+        <p class="pt">想问啥就问啥，聊聊八卦也很好~</p>
+        <form action="/message" method="post" id="qForm"> 
+            <p><input type="text" name="message" style="width:500px"/></p>
+            <p><input type="submit" value="提问" id="btn" />&nbsp;<span id="error" class="error"></span></p>
+        </form>
+    </div>
+    <script src="js/tangram-1.5.2.2.js"></script>
+    <script src="js/ask.js"></script>
+</body>
+</html>
