@@ -1,0 +1,19 @@
+{
+  "name": "ask",
+  "version": "0.1.0",
+  "description": "实时显示问题，沟通会神马的最好用了。",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/treelite/ask.git"
+  },
+  "keywords": [
+    "websocket"
+  ],
+  "author": "cxl",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "webser": "git://github.com/treelite/webser.git",
+    "websocket": "~1.0.8"
+  }
+}
