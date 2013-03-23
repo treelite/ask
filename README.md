@@ -8,4 +8,4 @@
     
     node ./run.js [port]
 
-默认端口8080
+默认端口8080，`/ask.html`提交问题，`/message.html`查看问题
