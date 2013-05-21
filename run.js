@@ -55,11 +55,29 @@ var no = 0;
 server.add('/message', {
     POST: function (data) {
         var res = {
+                type: 'message',
                 no: ++no,
                 msg: data.message
             };
 
         data = JSON.stringify(res);
+        connectPool.forEach(function (item) {
+            item.connect.sendUTF(data);
+        });
+
+        return '{status: 0}';
+    }
+});
+
+server.add('/up', {
+    POST: function (data) {
+        var res = {
+            type: 'up',
+            no: data.id
+        };
+
+        data = JSON.stringify(res);
+
         connectPool.forEach(function (item) {
             item.connect.sendUTF(data);
         });

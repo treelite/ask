@@ -27,6 +27,7 @@
 }
 
 .messages {
+    padding: 0 10px;
     border: 1px solid #CCC;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -37,6 +38,18 @@
     margin: 5px;
     border-bottom: 1px solid #CCC;
 }
+
+.message-em {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.message-opt {
+    float: right;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
 .message:last-child {
     border-bottom:none
 }
