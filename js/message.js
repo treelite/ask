@@ -44,6 +44,10 @@
             ele.appendChild(item);
         }
     };
+
+    messageHandler.reset = function () {
+        view.container.innerHTML = '';
+    };
    
     function createMessageHandler() {
         return function (data) {

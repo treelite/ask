@@ -69,6 +69,22 @@ server.add('/message', {
     }
 });
 
+server.add('/reset', {
+    GET: function () {
+        no = 0;
+        var cmd = {
+                type: 'reset'
+            };
+        cmd = JSON.stringify(cmd);
+
+        connectPool.forEach(function (item) {
+            item.connect.sendUTF(cmd);
+        });
+
+        return '{status: 0}';
+    }
+});
+
 server.add('/up', {
     POST: function (data) {
         var res = {
